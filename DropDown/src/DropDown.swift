@@ -1081,7 +1081,7 @@ extension DropDown {
 			cancel()
 			return nil
 		} else {
-			return view
+			return nil//view
 		}
 	}
 
