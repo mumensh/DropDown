@@ -1087,8 +1087,10 @@ extension DropDown {
 		if dismissMode == .automatic && view === dismissableView {
 			cancel()
 			return nil
-		} else {
-			return nil//view
+        } else if view is DropDownCell {
+            return view
+        } else {
+			return nil
 		}
 	}
 
